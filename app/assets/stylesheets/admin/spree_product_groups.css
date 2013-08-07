@@ -24,6 +24,10 @@ table#product_scopes tr td.actions {
   text-align: right;
 }
 
+table#product_scopes tr td.actions a {
+  position:absolute;
+}
+
 table#product_scopes tr td table {
   margin: 0;
   width: auto;
