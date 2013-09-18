@@ -145,7 +145,8 @@ module Spree
     end
 
     def include?(product)
-      res = apply_on(Product.where("spree_products.id = ?", product.id), false)
+      # res = apply_on(Product.where("spree_products.id = ?", product.id), false)
+      res = apply_on(Product.where(:id => product.id), false) 
       res.length > 0
     end
 
